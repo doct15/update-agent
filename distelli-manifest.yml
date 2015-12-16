@@ -21,4 +21,7 @@ bmcgehee/updateagent:
     - echo "/usr/local/bin/distelli agent install" >> /tmp/update_distelli.sh
     - sudo chmod 755 /tmp/update_distelli.sh
     - sudo /tmp/update_distelli.sh &
+
+  Terminate:
+    - echo "Run a Terminate Deploy after Deploying"
     
