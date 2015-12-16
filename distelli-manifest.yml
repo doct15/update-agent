@@ -5,6 +5,10 @@ bmcgehee/updateagent:
     
   PostInstall:
     - wget -qO- https://www.distelli.com/download/client | sudo sh
+    - if [ -a /testing.bm ]; then
+    -   echo "TESTING - deploy fail"
+    -   exit 1
+    - fi
     
   Start:
     - echo "#!/bin/bash" > /tmp/update_distelli.sh
