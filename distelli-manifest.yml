@@ -24,4 +24,4 @@ bmcgehee/updateagent:
 
   Terminate:
     - echo "Run a Terminate Deploy after Deploying"
-    
+
